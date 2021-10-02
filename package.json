@@ -1,14 +1,25 @@
 {
-  "name": "week-2",
-  "version": "1.0.0",
-  "description": "Demo for Week 2",
-  "main": "index.js",
+  "name": "lesson2b",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": 
+  {
+    "node": "^12.8.3",
+    "npm": "^6.0.0"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.5.1",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
   }
 }
