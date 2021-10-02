@@ -1,66 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <!-- CSS Section -->
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel='stylesheet' href='./Content/app.css' />
-  </head>
-  <body>
+<%- include partials/header.ejs%>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Jaivin James</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+<%- include partials/main_nav.ejs%>
 
-          <li class="nav-item active">
-            <a class="nav-link" href="/home"><i class="fas fa-lg fa-home"></i> Home </a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/aboutMe"><i class="fas fa-lg fa-user-tie"></i></i> About Me</a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/projects"><i class="far fa-lg fa-file"></i></i> Projects </a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/services"><i class="fas fa-lg fa-laptop-code"></i></i></i> Services </a>
-          </li>
-
-          <li class="nav-item active">
-            <a class="nav-link" href="/contact"><i class="far fa-lg fa-envelope"></i></i> Contact </a>
-          </li>
-          
-
-          
-        </ul>
-       
-      </div>
-    </nav>
-
-<!-- Main Content -->
-    <div class="container">
+    <!-- Main Content -->
+    <main class="container">
 
         <div class="jumbotron">
-          <h1 class="display-4"><%= title %></h1>
-          <p class="lead">Welcome to the <%= title %> page</p>
-          <hr class="my-4">
+          <h1 class="display-4">Welcome to the <%= title %> page</h1>
 
       </div>
-    </div>
+    </main>
     
-    
-
-    <!-- JavaScript Section --> 
-    <script src="./jquery/dist/jquery.min.js"></script>
-    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./Scripts/app.js"></script>
-  </body>
-</html>
+<%- include partials/bottom_nav.ejs%>
+<%- include partials/footer.ejs%>
