@@ -1,23 +1,27 @@
 /* your custom css goes here */
+
+/* To adjust overall page layout*/
 .main_container {
     height: 100%;
     margin-top: 90px;
     margin-bottom: 90px;
 }
 
+/* To fix Nav header bar to top*/
 .nav-header {
     position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
 }
-
+/* To fix Nav footer bar to botttom*/
 .nav-footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
 }
 
+/* To postion the Logo on Nav bar*/
 .Logo {
     height: 60px;
     padding-left: 10px;
