@@ -1,1 +1,10 @@
 /* your custom css goes here */
+html,body{height: 100%;} /*  To set html and body to 100% of screen*/
+.main_container{height: 100vh;}
+
+.Logo{height: 60px; padding-left: 10px;}
+.home_layout{height: 400px;}
+.home_bg_img{ width: 100%; height: inherit;}
+.home-content{max-width: 1000px;margin: 10px auto;}
+.homepage_links{display: flex;justify-content: space-evenly;}
+
