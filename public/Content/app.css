@@ -83,3 +83,10 @@
     font-weight: 600;
     margin: 0 auto;
 }
+
+.table-layout {
+    height: 100px;
+    padding-top: 7%;
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,55 @@
+
+
+<!-- Content for the Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+
+
+                <div class="form-group">
+                    <label for="usernameTextField">User Name</label>
+                    <input type="text" class="form-control"
+                    id="usernameTextField"
+                    placeholder="Enter the contact's User Name"
+                    name="username" 
+                    value="<%= contact.username %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailTextField">Email</label>
+                    <input type="text" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter the contact's Email"
+                    name="email" 
+                    value="<%= contact.email %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneTextField">Phone Number</label>
+                    <input type="text" class="form-control"
+                    id="phoneTextField"
+                    placeholder="Enter the Phone Number"
+                    name="phone" 
+                    value="<%= contact.phone %>"
+                    required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+
+                <button href="/contact-list/delete/<%= contact._id %>" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash-alt"></i>Delete Contact</button>
+
+                <button href="/contact-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel</button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
