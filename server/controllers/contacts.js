@@ -1,3 +1,10 @@
+/**
+ * Name : Jaivin James
+ * Student ID: 301177233
+ * Date: 23 October 2021
+ * File Name: Express-Portfolio with Authentication
+ */
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -20,7 +27,7 @@ module.exports.displayContactList = (req, res, next) => {
             ContactList: contactList, 
             displayName: req.user ? req.user.displayName : ''});      
         }
-    });
+    }).sort({username: 1});
 }
 
 /*
@@ -63,7 +70,7 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('contacts/edit', {title: 'Edit Contact', contact: contactToEdit, 
+            res.render('contacts/update', {title: 'Edit Contact', contact: contactToEdit, 
             displayName: req.user ? req.user.displayName : ''})
         }
     });

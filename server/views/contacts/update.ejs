@@ -7,8 +7,6 @@
             <h1><%= title %></h1>
 
             <form class="form" method="POST">
-
-
                 <div class="form-group">
                     <label for="usernameTextField">User Name</label>
                     <input type="text" class="form-control"
@@ -42,8 +40,10 @@
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
 
-                <button href="/contact-list/delete/<%= contact._id %>" class="btn btn-danger btn-sm">
-                    <i class="fas fa-trash-alt"></i>Delete Contact</button>
+                <button>
+                <a href="/contact-list/delete/<%= contact._id %>" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash-alt"></i>Delete Contact</a>
+                </button>
 
                 <button href="/contact-list" class="btn btn-warning">
                     <i class="fas fa-undo"></i> Cancel</button>

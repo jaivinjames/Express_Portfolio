@@ -1,3 +1,10 @@
+/**
+ * Name : Jaivin James
+ * Student ID: 301177233
+ * Date: 23 October 2021
+ * File Name: Express-Portfolio with Authentication
+ */
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -22,7 +29,7 @@ function requireAuth(req, res, next)
     next();
 }
 /* GET Route for the Contact List page - READ Operation */
-router.get('/', contactController.displayContactList);
+router.get('/', requireAuth, contactController.displayContactList);
 
 /* GET Route for displaying the Add page - CREATE Operation */
 //router.get('/add', requireAuth, contactController.displayAddPage);

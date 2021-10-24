@@ -3,6 +3,13 @@ let router = express.Router();
 
 let indexController = require('../controllers/index');
 
+/**
+ * Name : Jaivin James
+ * Student ID: 301177233
+ * Date: 23 October 2021
+ * File Name: Express-Portfolio with Authentication
+ */
+
 /* GET home page. */
 router.get('/', indexController.displayHomePage);
 

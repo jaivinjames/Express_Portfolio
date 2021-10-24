@@ -1,3 +1,10 @@
+/**
+ * Name : Jaivin James
+ * Student ID: 301177233
+ * Date: 23 October 2021
+ * File Name: Express-Portfolio with Authentication
+ */
+
 // require modules for the User model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
